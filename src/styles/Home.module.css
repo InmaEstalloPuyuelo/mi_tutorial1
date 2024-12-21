@@ -166,3 +166,100 @@ a.secondary {
     filter: invert();
   }
 }
+/* Container for the entire tutorial content */
+.tutorial-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: var(--gray-alpha-100);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the tutorial */
+.tutorial-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--button-primary-hover);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.8rem;
+  color: var(--button-primary-hover);
+  margin: 40px 0 16px;
+  border-left: 5px solid var(--button-primary-hover);
+  padding-left: 12px;
+}
+
+/* Section descriptions */
+.section-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(var(--gray-rgb), 0.7);
+  margin-bottom: 20px;
+}
+
+/* Unordered list for points */
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(var(--gray-rgb), 0.05);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: rgba(var(--gray-rgb), 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-list li:hover {
+  background: rgba(var(--gray-rgb), 0.08);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-list li::before {
+  content: "•";
+  font-size: 1.5rem;
+  color: var(--button-primary-hover);
+}
+
+.list {
+  font-family: var(--font-geist-mono);
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-left: 4px solid var(--gray-alpha-200);
+  background: var(--gray-alpha-100);
+  border-radius: 4px;
+}
+
+.list li strong {
+  font-weight: 600;
+}
+
+.list li code {
+  font-family: var(--font-geist-mono);
+  background: var(--gray-alpha-200);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
